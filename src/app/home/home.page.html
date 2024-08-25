@@ -1,20 +1,44 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Weather 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<div class="main">
+  <span class="city">Dublin</span>
+  <span class="date"> Mon, 3:30pm</span>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="icon">
+    <img src="../../assets/2x.png" alt="">
   </div>
+
+  <span class="description">Sunny</span>
+  <span class="temperature"> 17°C</span>
+ 
+</div>
+
+<!--This will be my grid to create my 7 day forecast grid-->
+   <ion-grid>
+    <!--Row of Days-->
+    <ion-row>
+      <ion-col class="day">Tue</ion-col>
+      <ion-col class="day">Wed</ion-col>
+      <ion-col class="day">Thur</ion-col>
+      <ion-col class="day">Fri</ion-col>
+      <ion-col class="day">Sat</ion-col>
+      <ion-col class="day">Sun</ion-col>
+      <ion-col class="day">Mon</ion-col>
+    </ion-row>
+<!--Weather Icons-->
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+   </ion-grid>
+    
 </ion-content>

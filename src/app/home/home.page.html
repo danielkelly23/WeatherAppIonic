@@ -9,15 +9,15 @@
 <ion-content [fullscreen]="true">
 <div class="main">
   <span class="city">Dublin</span>
-  <span class="date"> Mon, 3:30pm</span>
+  <span class="date">{{res.list[0].dt_txt}} </span>
 
   
 
   <div class="icon">
-    <img src="../../assets/weatherIcon.png" alt="" >
+    <img src="https://openweathermap.org/img/w/{{ res.list[0].weather[0].icon }}.png" alt="icon" >
 </div>
-  <span class="description">Sunny</span>
-  <span class="temperature"> 17°C</span>
+  <span class="description">{{res.list[0].weather[0].main}}</span>
+  <span class="temperature">{{res.list[0].main.temp}}°C</span>
  
 </div>
 
@@ -32,6 +32,7 @@
       <ion-col class="day">Sat</ion-col>
       <ion-col class="day">Sun</ion-col>
       <ion-col class="day">Mon</ion-col>
+      
     </ion-row>
 <!--Chance of Precipitation-->
     <ion-row>
@@ -40,18 +41,20 @@
       <ion-col class="Precipitation">60%</ion-col>
       <ion-col class="Precipitation">15%</ion-col>
       <ion-col class="Precipitation">-</ion-col>
-      <ion-col class="Precipitation">75%</ion-col>
+      <ion-col class="Precipitation">15%</ion-col>
       <ion-col class="Precipitation">-</ion-col>
+      
     </ion-row>
 <!--Weather Icons-->
     <ion-row>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
-      <ion-col class="iconsmall"><img src="../../assets/weatherIcon.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[1].weather[0].icon }}.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[2].weather[0].icon }}.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[3].weather[0].icon }}.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[4].weather[0].icon }}.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[5].weather[0].icon }}.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[6].weather[0].icon }}.png" alt=""></ion-col>
+      <ion-col class="iconsmall"><img src="https://openweathermap.org/img/w/{{ res.list[7].weather[0].icon }}.png" alt=""></ion-col>
+
     </ion-row>
 <!--Max Temperature-->
     <ion-row>
@@ -60,8 +63,9 @@
       <ion-col class="hi-temp--">14°C</ion-col>
       <ion-col class="hi-temp--">19°C</ion-col>
       <ion-col class="hi-temp--">16°C</ion-col>
-      <ion-col class="hi-temp--">15°C</ion-col>
-      <ion-col class="hi-temp--">13°C</ion-col>
+      <ion-col class="hi-temp--">19°C</ion-col>
+      <ion-col class="hi-temp--">16°C</ion-col>
+      
     </ion-row>
 
     <!--Min Temperature-->
@@ -71,8 +75,9 @@
       <ion-col class="sm-temp">10°C</ion-col>
       <ion-col class="sm-temp">15°C</ion-col>
       <ion-col class="sm-temp">10°C</ion-col>
-      <ion-col class="sm-temp">12°C</ion-col>
-      <ion-col class="sm-temp">8°C</ion-col>
+      <ion-col class="sm-temp">15°C</ion-col>
+      <ion-col class="sm-temp">10°C</ion-col>
+     
     </ion-row>
 
    </ion-grid>

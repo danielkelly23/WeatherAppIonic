@@ -8,7 +8,7 @@ import { WeatherService } from '../services/weather.service';//import weather se
 })
 export class HomePage {
 
-  private res: any;
+  public res: any;
 
   constructor(private weatherAPI:WeatherService) {}
 
@@ -22,6 +22,7 @@ export class HomePage {
       console.log(this.res);
     });
   }
-
+ 
+  
 
 }

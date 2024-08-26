@@ -38,7 +38,7 @@ ion-content{
 
 .temperature{
   display: block;
-  font-size: $size5;
+  font-size: $size3;
   padding: 0px;
   margin: 0px;
 }
@@ -46,7 +46,7 @@ ion-content{
 .description{
  
   display: block;
-  font-size: $size4;
+  font-size: $size3;
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ ion-content{
   display: block;
   font-size: $size4;
   padding-top: 0px;
-  
+  width: auto;
 }
 
 

@@ -6,3 +6,4 @@ This app show accurate weather conditions, a 7 day forecast and minimun and maxi
 -- Features ---
 Features include Weather Forecast, 7 day forecast and current conditions
 --
+  G00421651@atu.ie for further contact

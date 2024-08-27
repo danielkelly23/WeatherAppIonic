@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      The Weather App
+      Dublin City Weather App
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,14 +9,16 @@
 <ion-content [fullscreen]="true">
 <div class="main">
   <span class="city">Dublin</span>
-  <span class="date">{{res.list[0].dt_txt}} </span>
+  <span class="date">{{res.list[0].dt_txt}} </span> <!--date is being gathered from getWeatherdata Method from api-->
 
   
 
   <div class="icon">
     <img src="https://openweathermap.org/img/w/{{ res.list[0].weather[0].icon }}.png" alt="icon" >
 </div>
+<!--description ie. sunny, cloudy, rain etc-->
   <span class="description">{{res.list[0].weather[0].main}}</span>
+  <!--temperature-->
   <span class="temperature">{{res.list[0].main.temp}}°C</span>
  
 </div>
@@ -58,25 +60,25 @@
     </ion-row>
 <!--Max Temperature-->
     <ion-row>
-      <ion-col class="hi-temp">22°C</ion-col>
-      <ion-col class="hi-temp--">17°C</ion-col>
-      <ion-col class="hi-temp--">14°C</ion-col>
-      <ion-col class="hi-temp--">19°C</ion-col>
-      <ion-col class="hi-temp--">16°C</ion-col>
-      <ion-col class="hi-temp--">19°C</ion-col>
-      <ion-col class="hi-temp--">16°C</ion-col>
+      <ion-col class="hi-temp">{{res.list[1].main.temp_max}}°C</ion-col>
+      <ion-col class="hi-temp--">{{res.list[2].main.temp_max}}°C</ion-col>
+      <ion-col class="hi-temp--">{{res.list[3].main.temp_max}}°C</ion-col>
+      <ion-col class="hi-temp--">{{res.list[4].main.temp_max}}°C</ion-col>
+      <ion-col class="hi-temp--">{{res.list[5].main.temp_max}}°C</ion-col>
+      <ion-col class="hi-temp--">{{res.list[6].main.temp_max}}°C</ion-col>
+      <ion-col class="hi-temp--">{{res.list[7].main.temp_max}}°C</ion-col>
       
     </ion-row>
 
     <!--Min Temperature-->
     <ion-row>
-      <ion-col class="sm-temp">13°C</ion-col>
-      <ion-col class="sm-temp">9°C</ion-col>
-      <ion-col class="sm-temp">10°C</ion-col>
-      <ion-col class="sm-temp">15°C</ion-col>
-      <ion-col class="sm-temp">10°C</ion-col>
-      <ion-col class="sm-temp">15°C</ion-col>
-      <ion-col class="sm-temp">10°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[1].main.temp_min}}°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[2].main.temp_min}}°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[3].main.temp_min}}°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[4].main.temp_min}}°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[5].main.temp_min}}°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[6].main.temp_min}}°C</ion-col>
+      <ion-col class="sm-temp">{{res.list[7].main.temp_min}}°C</ion-col>
      
     </ion-row>
 

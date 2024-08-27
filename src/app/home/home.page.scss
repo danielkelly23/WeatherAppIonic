@@ -1,3 +1,4 @@
+//Use the $size to define sizes for example on the fint sizes instead of repeating 
 $size1:13em;
 $size2:3.5em;
 $size3:3em;
@@ -6,15 +7,20 @@ $size5:1.5em;
 $size6:1em;
 
 ion-content{
-  --ion-font-family: "sans-serif";
+  --ion-font-family:"Josefin Sans", "sans-serif";
+}
+
+ion-title{
+  --background: #9ea82d;
 }
 
 ion-header{
   --ion-text-color:#555;
+  --background: #9ea82d;
 }
 
 ion-content{
-  --background: linear-gradient(#39c4d3, #6DD5FA);
+  --background: linear-gradient(#39c4d3, #e9fa6d);
   --ion-text-color:#222;
 }
 
@@ -52,9 +58,10 @@ ion-content{
 
 .icon{
   display: block;
-  font-size: $size4;
+  size: 400px;
+  
   padding-top: 0px;
-  width: auto;
+  //width: auto;
 }
 
 
@@ -68,7 +75,7 @@ ion-content{
 
 ion-grid{
   text-align: center;
-  position: fixed;
+  //position: fixed;
   bottom: 0%;
   margin: 0% auto;
 }

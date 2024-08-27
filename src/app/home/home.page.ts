@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { WeatherService } from '../services/weather.service';//import weather service from weather.service
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
